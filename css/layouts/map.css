@@ -1,5 +1,16 @@
 /* TODO: design a flexbox layout with sticky map */
+.layout-box{
+	display: flex;
+}
+
+.cards-box{
+	flex-grow: 1;
+}
+
 #map {
-  width: 700px;
-  height: 700px;
+	flex: 0 0 450px;
+	height: 100vh;
+	position: sticky !important; /* !important to override Gmaps inline CSS */
+  	top: 0 !important;
+
 }
